@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>定時鎖時間計算器</title>
+<title>定時鎖時間計算器（測試中）</title>
 <style>
   body {
     font-family: Arial, sans-serif;
@@ -47,11 +47,11 @@
 </head>
 <body>
 
-<h1>定時鎖時間計算器</h1>
+<h1>定時鎖時間計算器（測試中）</h1>
 
-<label>選擇起始時間：</label>
-<button onclick="useNow()">現在時間</button>
-<button onclick="useCustom()">另外指定時間</button>
+<label>一、選擇起始時間：</label>
+<button onclick="useNow()">用現在的時間</button>
+<button onclick="useCustom()">我要另外指定時間</button>
 
 <div id="customStart" style="display:none; margin-top:1rem;">
   <label>起始時間：</label>
@@ -189,7 +189,7 @@
 </div>
 
 <div id="openTime" style="margin-top:1rem;">
-  <label>開啟時間：</label>
+  <label>二、預計開啟時間：</label>
   <select id="openMonth">
     <option value="">月</option>
 <option value="1">1月</option>
@@ -392,7 +392,7 @@ function calculateTime() {
   document.getElementById('result').innerHTML = `
     應撥定時間：<br>
     ${days} 天 ${hours} 小時 ${minutes} 分鐘<br><br>
-    請務必再三確認撥定時間，祝業績長紅
+    本程式尚在測試中，請務必再三確認撥定時間，祝業績長紅
   `;
 }
 
